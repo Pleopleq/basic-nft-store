@@ -14,7 +14,9 @@ const App = () => {
   return (
     <div className="App">
       <div className="main-container">
-        <h1>NFT STORE</h1>
+        <header className="store-title">
+          <h1>NFT STORE</h1>
+        </header>
         <div className="store-container">
           <ProductList cart={cart} setCart={setCart}></ProductList>
           <Cart cart={cart} setCart={setCart}></Cart>

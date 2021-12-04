@@ -19,22 +19,27 @@ const Cart = ({cart, setCart}) => {
                 <option value="20">OFF20</option>
             </select>
             <hr></hr>
-
-            {cart.items.map(item => {
+            <div className="cart-item__container">
+            {
+            cart.items.length === 0 ? 
+            <p className="cart-noitems">No items in your cart :(</p>
+            :
+            cart.items.map(item => {
                     return (
-                        <>
-                        
-                        <p>{item.name}</p>
-                        <p>${item.price} </p>
+                        <div>
+                        <img alt={`${item.name} nft`} className="product-image__incart" src={item.image}></img>
+                        <p className="cart-item__name">{item.name}</p>
+                        <p className="cart-item__price">${item.price} </p>
                         <hr></hr>
-                        </>
+                        </div>
                     )
                 })}
             </div>
+            </div>
             <div>
                 <h2>Sub total: $ {cart.subTotalPrice}</h2>
-                <h2>Discout: $ {cart.discount} </h2>
-                <h2>Total: $ {cart.totalPrice} </h2>
+                <h2>Discout: <span className={cart.discount > 0 ? "cart-discount" : '' }>$ {cart.discount}</span></h2>
+                <h2>Total: <span className={cart.discount > 0 ? "cart-discount" : '' }>$ {cart.totalPrice}</span></h2>
             </div>
         </div>
     )

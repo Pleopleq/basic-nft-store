@@ -1,3 +1,7 @@
+html {
+  height: 100vh;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,8 +16,82 @@ code {
     monospace;
 }
 
+.primary-btn {
+  background-color: #82E0AA;
+  color:white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.secondary-btn {
+  background-color: #FF5733;
+  color:white;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 4px;
+}
+
+.main-container {
+  padding: 0 2rem 0 2rem;
+  height: 100vh;
+}
+
+.store-title {
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
+}
+
+.store-title h1 {
+  color: whitesmoke
+}
 
 .store-container {
   display: flex;
   justify-content: space-around;
+}
+
+.product-container {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.product-price {
+  font-weight: 700;
+}
+
+.product-image {
+  width: 200px;
+}
+
+.product-image__incart {
+  width: 120px;
+}
+
+.cart-item__container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 1rem;
+  min-height: 5rem;
+}
+
+.cart-noitems {
+  font-weight: 700;
+  text-align: center;
+}
+
+.cart-discount {
+  color: #82E0AA;
+}
+
+.cart-item__name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.cart-item__price {
+  font-weight: 700;
+  margin-top: 0.2rem;
 }

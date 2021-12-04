@@ -40,7 +40,7 @@ const ProductList = ({cart, setCart}) => {
     }
 
     return (
-        <div> 
+        <div className="product-list"> 
             <h1>Product list</h1>
             <div>
                 {products.productList.map(product => {
