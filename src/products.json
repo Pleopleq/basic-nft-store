@@ -1,0 +1,32 @@
+{
+    "productList": [
+        {
+            "id": 1,
+            "name": "Pepe with a gun",
+            "image": "https://i.kym-cdn.com/photos/images/original/000/913/373/efd.jpg",
+            "quantity": 1,
+            "price": 20
+        },
+        {
+            "id": 2,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPmRYyNOK4ejXktQEcBnO3Gw9mOVU8_8wCvtKFAcuW6bOarA0F-4GpinYoGc4WOnAbb0A&usqp=CAU",
+            "name": "Cursed Wojack",
+            "quantity": 1,
+            "price": 30
+        },
+        {
+            "id": 3,
+            "name": "Pog",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Pogchamp_Emoji.svg/1024px-Pogchamp_Emoji.svg.png",
+            "quantity": 1,
+            "price": 50
+        },
+        {
+            "id": 4,
+            "name": "Soy Wojaks Pointing",
+            "image": "https://i.kym-cdn.com/photos/images/newsfeed/001/892/024/9f6.png",
+            "quantity": 1,
+            "price": 60
+        }
+    ]
+}

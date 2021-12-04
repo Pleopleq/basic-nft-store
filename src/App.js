@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import ProductList from "./components/ProductList";
+import Cart from "./components/Cart";
+import { useState } from "react";
 
-function App() {
+const App = () => {
+  const [cart, setCart] = useState({
+    items: [],
+    subTotalPrice: 0,
+    discountCode: 0,
+    discount: 0,
+    totalPrice: 0 
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main-container">
+        <h1>NFT STORE</h1>
+        <div className="store-container">
+          <ProductList cart={cart} setCart={setCart}></ProductList>
+          <Cart cart={cart} setCart={setCart}></Cart>
+        </div>
+      </div>
     </div>
   );
 }
